@@ -9,7 +9,7 @@
   <body>
     <a-scene>
       
-      <!-- Precarga del modelo CAD optimizado -->
+      <!-- Precarga del modelo CAD con la mayúscula correcta -->
       <a-assets>
         <a-asset-item id="brazoRobotico" src="models/BrazoOptimizado.glb"></a-asset-item>
       </a-assets>
@@ -55,10 +55,8 @@
                 <a-cylinder position="0 4 5.2" rotation="90 0 0" radius="0.2" height="5" color="gray"></a-cylinder>     
         </a-entity>
 
-        <!-- ========================================== -->
-        <!-- INTEGRACIÓN DEL BRAZO ROBÓTICO GLB         -->
-        <!-- ========================================== -->
-        <a-entity gltf-model="#BrazoRobotico" position="3 0 0" scale="1 1 1" rotation="0 -90 0"></a-entity>
+        <!-- Instanciación del brazo robótico -->
+        <a-entity gltf-model="#brazoRobotico" position="3 0 2" scale="1 1 1" rotation="0 -90 0"></a-entity>
 
       </a-entity>
 
