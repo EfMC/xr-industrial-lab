@@ -9,10 +9,10 @@
   <body>
     <a-scene>
       
-      <!-- Precarga del modelo CAD con la mayúscula correcta -->
-      <a-assets>
-        <a-asset-item id="brazoRobotico" src="models/BrazoOptimizado.glb"></a-asset-item>
-      </a-assets>
+    <a-assets>
+      <!-- Apuntando directamente a la raíz sin la carpeta models -->
+      <a-asset-item id="brazoRobotico" src="BrazoOptimizado.glb"></a-asset-item>
+    </a-assets>
 
       <!-- Espacio de trabajo-->
       <a-entity position="0 0 -5">
